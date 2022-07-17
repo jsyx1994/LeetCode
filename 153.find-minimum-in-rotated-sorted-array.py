@@ -22,10 +22,10 @@ class Solution:
             mid = (l + h) // 2
             val = nums[mid]
             
-            if val > nums[l]:
+            if val > nums[h]:
                 l = mid + 1
             else:
-                h = mid - 1
+                h = mid
         
         return nums[l]
         
